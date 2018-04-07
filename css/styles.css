@@ -1,0 +1,862 @@
+@font-face {
+  font-family: Montserrat_Light;
+  src: url("../fonts/montserrat/Montserrat-Light.eot") format("eot");
+  src: url("../fonts/montserrat/Montserrat-Light.woff2") format("woff2");
+  src: url("../fonts/montserrat/Montserrat-Light.woff") format("woff");
+  src: url("../fonts/montserrat/Montserrat-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Montserrat_Regular;
+  src: url("../fonts/montserrat/Montserrat-Regular.eot") format("eot");
+  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+  src: url("../fonts/montserrat/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Montserrat_ExtraLight;
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.eot") format("eot");
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.woff2") format("woff2");
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.woff") format("woff");
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Raleway_Regular;
+  src: url("../fonts/raleway/Raleway-Regular.eot") format("eot");
+  src: url("../fonts/raleway/Raleway-Regular.woff2") format("woff2");
+  src: url("../fonts/raleway/Raleway-Regular.woff") format("woff");
+  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Raleway_Medium;
+  src: url("../fonts/raleway/Raleway-Medium.eot") format("eot");
+  src: url("../fonts/raleway/Raleway-Medium.woff2") format("woff2");
+  src: url("../fonts/raleway/Raleway-Medium.woff") format("woff");
+  src: url("../fonts/raleway/Raleway-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Raleway_ExtraBold;
+  src: url("../fonts/raleway/Raleway-ExtraBold.eot") format("eot");
+  src: url("../fonts/raleway/Raleway-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/raleway/Raleway-ExtraBold.woff") format("woff");
+  src: url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Raleway_SemiBold;
+  src: url("../fonts/raleway/Raleway-SemiBold.eot") format("eot");
+  src: url("../fonts/raleway/Raleway-SemiBold.woff2") format("woff2");
+  src: url("../fonts/raleway/Raleway-SemiBold.woff") format("woff");
+  src: url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype"); }
+
+/* line 7, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+.main-header {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  /* line 14, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-header__logo {
+    fill: #fff;
+    display: inline-flex;
+    align-items: center; }
+  /* line 19, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-header h1 {
+    color: #fff;
+    font-family: Raleway_Regular;
+    font-size: 34px;
+    font-weight: 400; }
+  /* line 25, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-header__nav {
+    font-family: Montserrat_Light;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    display: inline-flex;
+    text-align: center;
+    align-items: center; }
+    /* line 33, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__nav ul {
+      padding: 0; }
+    /* line 36, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__nav li {
+      display: inline-flex;
+      list-style-type: none;
+      margin: 0.5em; }
+    /* line 41, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.5s; }
+      /* line 45, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-header__nav a:hover {
+        color: #c7b29a; }
+  /* line 50, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-header__slider {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 3em;
+    margin-bottom: 5em; }
+    /* line 56, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__slider span {
+      font-family: Raleway_Medium;
+      font-size: 32px;
+      font-weight: 500; }
+    /* line 61, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__slider h2 {
+      font-family: Raleway_ExtraBold;
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      margin-top: 1em; }
+    /* line 69, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__slider p {
+      font-family: Montserrat_Light;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      margin: 0;
+      padding: 0;
+      margin: 1em; }
+    /* line 78, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-header__slider button {
+      font-family: Raleway_ExtraBold;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 23px;
+      text-transform: uppercase;
+      padding: 10px 25px 10px 25px;
+      border-radius: 5px;
+      background-color: #c7b29a;
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      margin-top: 1em;
+      transition: 0.5s; }
+      /* line 92, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-header__slider button:hover {
+        background-color: #fff;
+        color: #c7b29a; }
+
+/* line 100, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+.main-content {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 1em; }
+  /* line 104, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-fields {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    @media screen and (min-width: 992px) {
+      /* line 104, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-fields {
+        justify-content: center; } }
+    /* line 112, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-fields__item {
+      text-align: center;
+      margin: 1em; }
+      @media screen and (min-width: 576px) {
+        /* line 112, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-fields__item {
+          width: 16em;
+          margin: 1em 0.5em 1em 0.5em;
+          flex-grow: 1; } }
+      @media screen and (min-width: 768px) {
+        /* line 112, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-fields__item {
+          width: 10em;
+          margin: 1em 0.5em 1em 0.5em; } }
+      @media screen and (min-width: 992px) {
+        /* line 112, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-fields__item {
+          width: 14em;
+          margin: 1em 0.5em 1em 0.5em; } }
+      @media screen and (min-width: 1200px) {
+        /* line 112, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-fields__item {
+          width: 16em;
+          margin: 1em; } }
+      /* line 132, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-fields__item span {
+        font-family: Raleway_SemiBold;
+        color: #555;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: capitalize;
+        display: block; }
+      /* line 140, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-fields__item p {
+        font-family: Montserrat_Light;
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px; }
+    /* line 148, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-fields__icon {
+      fill: #555; }
+    /* line 151, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-fields__line {
+      margin: 0 auto;
+      height: 0.1em;
+      width: 2.5em;
+      background-color: #8c8c8c;
+      opacity: 0.3; }
+    /* line 158, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-fields a {
+      color: #555;
+      text-decoration: none; }
+      /* line 161, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-fields a:hover .main-content-fields__icon {
+        fill: #c7b29a;
+        transition: 0.5s; }
+      /* line 165, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-fields a:hover .main-content-fields__line {
+        background-color: #c7b29a;
+        transition: 0.5s; }
+      /* line 169, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-fields a:hover .main-content-fields__item span {
+        color: #c7b29a;
+        transition: 0.5s; }
+  /* line 175, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-screens {
+    padding: 83px 5% 0 5%;
+    margin-bottom: -4px;
+    text-align: center;
+    background-color: #fbfaf8; }
+    /* line 180, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-screens h1 {
+      font-family: Raleway_SemiBold;
+      color: #555;
+      font-size: 30px;
+      font-weight: 600; }
+    /* line 186, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-screens p {
+      font-family: Montserrat_Light;
+      color: #8c8c8c;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px; }
+      @media screen and (min-width: 1200px) {
+        /* line 186, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-screens p {
+          width: 800px;
+          margin: 0 auto; } }
+    /* line 197, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-screens img {
+      width: 100%; }
+      @media screen and (min-width: 1200px) {
+        /* line 197, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-screens img {
+          width: 1000px; } }
+  /* line 204, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-banner {
+    align-items: center;
+    padding: 48px 0 48px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%); }
+    @media screen and (min-width: 768px) {
+      /* line 204, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-banner {
+        justify-content: space-around; } }
+    @media screen and (min-width: 1200px) {
+      /* line 204, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-banner {
+        justify-content: center; } }
+    @media screen and (min-width: 1200px) {
+      /* line 222, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-banner__item {
+        margin-left: 100px;
+        margin-right: 100px; } }
+  @media screen and (min-width: 1200px) and (min-width: 576px) {
+    /* line 222, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-banner__item {
+      text-align: left; } }
+    /* line 230, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-banner__item span {
+      margin: 0 0 0 10px;
+      font-family: Raleway_Regular;
+      font-size: 28px;
+      font-weight: 400;
+      text-transform: capitalize; }
+    /* line 237, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-banner__item p {
+      margin: 8px;
+      font-family: Montserrat_Light;
+      color: #615855;
+      font-size: 18px;
+      font-weight: 300; }
+    /* line 244, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-banner__item button {
+      margin: 0 auto;
+      text-transform: uppercase;
+      background-color: #998675;
+      font-family: Raleway_ExtraBold;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 23px;
+      text-align: center;
+      border: 0;
+      border-radius: 5px;
+      padding: 10px 20px 10px 20px;
+      transition: 0.5s; }
+      /* line 258, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-banner__item button:hover {
+        background-color: #fff;
+        color: #998675; }
+  /* line 265, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 80px 5% 80px 5%; }
+    @media screen and (min-width: 1200px) {
+      /* line 265, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-projects {
+        justify-content: center;
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 80px; } }
+    /* line 277, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-projects h1 {
+      text-transform: capitalize;
+      font-family: Raleway_SemiBold;
+      color: #555;
+      font-size: 30px;
+      font-weight: 600; }
+    /* line 284, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-projects p {
+      font-family: Montserrat_Light;
+      color: #8c8c8c;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      width: 100%; }
+    /* line 292, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-projects a {
+      text-decoration: none; }
+      /* line 294, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-projects a:hover .main-content-projects__item {
+        background-color: #362f2d;
+        transition: 0.5s; }
+        /* line 297, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-projects a:hover .main-content-projects__item:hover h1 {
+          color: #fff;
+          transition: 0.5s; }
+        /* line 301, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-projects a:hover .main-content-projects__item:hover p {
+          color: #c7b29a;
+          transition: 0.5s; }
+        /* line 305, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-projects a:hover .main-content-projects__item:hover img {
+          filter: brightness(50%);
+          transition: 0.5s; }
+      /* line 310, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-projects a .main-content-projects__item {
+        margin: 30px 15px 0px 15px;
+        width: 100%;
+        background-color: #fbfaf8; }
+        @media screen and (min-width: 576px) {
+          /* line 310, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item {
+            width: 220px; } }
+        @media screen and (min-width: 768px) {
+          /* line 310, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item {
+            width: 300px; } }
+        @media screen and (min-width: 992px) {
+          /* line 310, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item {
+            width: 260px; } }
+        @media screen and (min-width: 1200px) {
+          /* line 310, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item {
+            width: 310px; } }
+        /* line 326, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-projects a .main-content-projects__item img {
+          width: 100%; }
+        /* line 329, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-projects a .main-content-projects__item_text {
+          margin-left: 28px;
+          padding-bottom: 20px;
+          position: relative;
+          text-transform: capitalize; }
+          /* line 334, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item_text h1 {
+            font-family: Raleway_Medium;
+            color: #c7b29a;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: left; }
+          /* line 341, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item_text p {
+            margin-top: -14px;
+            font-family: Montserrat_Light;
+            color: #d1d1d1;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left; }
+          /* line 350, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-content-projects a .main-content-projects__item_text:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 15px 15px 15px;
+            border-color: transparent transparent #fbfaf8 transparent;
+            position: absolute;
+            top: -35px;
+            left: 0px;
+            right: 0; }
+        /* line 363, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-projects a .main-content-projects__item:hover .main-content-projects__item_text:before {
+          border-bottom: 20px solid #362f2d;
+          transition: 0.5s; }
+  /* line 370, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-video {
+    background-image: url(../img/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 10em 0 10em 0; }
+    /* line 377, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-video__icon circle {
+      fill: #000;
+      opacity: 0.2; }
+    /* line 381, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-video__icon path {
+      fill: #fff; }
+    /* line 385, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-video h1 {
+      font-family: Raleway_Medium;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin: 1em; }
+    /* line 393, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-video p {
+      font-family: Montserrat_Light;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      margin: 1em; }
+    /* line 401, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-video span {
+      font-family: Montserrat_Regular;
+      color: #c7b29a;
+      font-size: 14px;
+      font-weight: 400; }
+  /* line 408, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-promo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fbfaf8;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      /* line 408, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-promo {
+        flex-wrap: no-wrap;
+        justify-content: flex-start; } }
+    @media screen and (min-width: 1200px) {
+      /* line 408, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-promo {
+        justify-content: center; } }
+    /* line 421, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-promo__img {
+      margin: 10% 10% 0 10%;
+      width: 80%;
+      height: 80%; }
+      @media screen and (min-width: 576px) {
+        /* line 421, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-promo__img {
+          width: 423px;
+          height: 616px;
+          margin: 10% 10% 0 10%; } }
+      @media screen and (min-width: 768px) {
+        /* line 421, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-promo__img {
+          width: 40%;
+          height: 40%;
+          text-align: left;
+          margin: 5% 5% 0 5%; } }
+      @media screen and (min-width: 1200px) {
+        /* line 421, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-promo__img {
+          width: 500px;
+          margin: 50px 0 0 0; } }
+    /* line 441, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-promo__text {
+      text-align: left;
+      margin: 5%; }
+      @media screen and (min-width: 768px) {
+        /* line 441, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-promo__text {
+          width: 40%;
+          margin: 3% 3% 0 3%; } }
+      @media screen and (min-width: 1200px) {
+        /* line 441, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-promo__text {
+          width: 500px;
+          margin: 80px 0 0 0; } }
+      /* line 452, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-promo__text h1 {
+        font-family: Raleway_SemiBold;
+        color: #555;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: left; }
+      /* line 459, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-promo__text p {
+        font-family: Montserrat_Light;
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px; }
+      /* line 466, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-promo__text ul {
+        list-style-type: none; }
+        /* line 468, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-promo__text ul li {
+          font-family: Montserrat_Light;
+          color: #8c8c8c;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+          background: url(../img/marker.png) 0px 1px no-repeat;
+          padding-left: 30px; }
+  /* line 480, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-records {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: -webkit-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(-180deg, #211b19 0%, #4e3427 100%);
+    weight: 100%;
+    padding: 70px 0 70px 0; }
+    @media screen and (min-width: 768px) {
+      /* line 480, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-records {
+        background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: linear-gradient(90deg, #211b19 0%, #4e3427 100%); } }
+    @media screen and (min-width: 1200px) {
+      /* line 480, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-records {
+        justify-content: center; } }
+    /* line 501, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-records__item {
+      width: 100%;
+      text-align: center;
+      margin: 30px 0 30px 0; }
+      @media screen and (min-width: 576px) {
+        /* line 501, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-records__item {
+          width: 50%; } }
+      @media screen and (min-width: 768px) {
+        /* line 501, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-records__item {
+          width: 25%; } }
+      @media screen and (min-width: 1200px) {
+        /* line 501, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-records__item {
+          width: 290px; } }
+      /* line 514, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-records__item svg {
+        fill: #c7b29a; }
+      /* line 517, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-records__item h1 {
+        font-family: Montserrat_ExtraLight;
+        color: #fff;
+        font-size: 48px;
+        font-weight: 200;
+        line-height: 36px;
+        margin: 20px; }
+      /* line 525, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-records__item span {
+        font-family: Montserrat_Light;
+        color: #c7b29a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-transform: uppercase; }
+      /* line 533, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-records__item_line {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 40px;
+        height: 2px;
+        background-color: #fff; }
+  /* line 542, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-content-posts {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    background-color: #fff;
+    text-align: center;
+    justify-content: space-around; }
+    @media screen and (min-width: 1200px) {
+      /* line 542, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts {
+        justify-content: center; } }
+    /* line 552, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-posts h1 {
+      font-family: Raleway_Medium;
+      color: #555;
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: capitalize;
+      width: 100%; }
+    /* line 560, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-posts p {
+      font-family: Montserrat_Light;
+      color: #8c8c8c;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      width: 100%; }
+    /* line 568, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-posts__item {
+      margin: 0 1em 1em 1em;
+      padding-bottom: 1em;
+      width: 370px;
+      background-color: #fbfaf8; }
+      @media screen and (min-width: 576px) {
+        /* line 568, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-posts__item {
+          width: 600px; } }
+      @media screen and (min-width: 768px) {
+        /* line 568, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-posts__item {
+          width: 210px; } }
+      @media screen and (min-width: 992px) {
+        /* line 568, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-posts__item {
+          width: 290px; } }
+      @media screen and (min-width: 1200px) {
+        /* line 568, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-content-posts__item {
+          width: 360px; } }
+      /* line 585, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts__item h2 {
+        text-align: left;
+        text-transform: capitalize;
+        font-family: Raleway_Medium;
+        color: #555;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0;
+        margin-left: 5%; }
+      /* line 595, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts__item p {
+        font-family: Montserrat_Light;
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+        margin: 0 auto;
+        width: 90%; }
+      /* line 605, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts__item span {
+        font-family: Montserrat_Light;
+        color: #c7b29a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        display: block;
+        text-transform: capitalize;
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 5%; }
+    /* line 620, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-posts picture img {
+      width: 100%;
+      height: 100%; }
+    /* line 625, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-content-posts a {
+      text-decoration: none; }
+      /* line 627, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts a:hover .main-content-posts__item {
+        background-color: #362f2d;
+        transition: 0.5s; }
+      /* line 631, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts a:hover h2 {
+        color: #c7b29a;
+        transition: 0.5s; }
+      /* line 635, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts a:hover p {
+        color: #fff;
+        transition: 0.5s; }
+      /* line 639, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-content-posts a:hover picture {
+        filter: brightness(50%);
+        transition: 0.5s; }
+
+/* line 647, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+.main-footer {
+  background-color: #191919;
+  width: 100%; }
+  /* line 650, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-footer-logos {
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+    @media screen and (min-width: 1200px) {
+      /* line 650, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-logos {
+        justify-content: center; } }
+    /* line 660, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-footer-logos__item {
+      text-align: center;
+      align-self: center;
+      margin-top: 15%;
+      margin-bottom: 15%; }
+      @media screen and (min-width: 1200px) {
+        /* line 660, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-logos__item {
+          margin-left: 45px;
+          margin-right: 45px;
+          margin-top: 140px;
+          margin-bottom: 140px; } }
+      /* line 671, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-logos__item img {
+        width: 80%; }
+        @media screen and (min-width: 992px) {
+          /* line 671, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+          .main-footer-logos__item img {
+            width: 100%; } }
+  /* line 679, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-footer-contacts {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    @media screen and (min-width: 576px) {
+      /* line 679, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts {
+        justify-content: space-around; } }
+    @media screen and (min-width: 1200px) {
+      /* line 679, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts {
+        justify-content: center; } }
+    /* line 690, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+    .main-footer-contacts__item {
+      flex-grow: 1;
+      width: 100%;
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: left; }
+      @media screen and (min-width: 576px) {
+        /* line 690, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item {
+          width: 40%; } }
+      @media screen and (min-width: 992px) {
+        /* line 690, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item {
+          width: 15%;
+          margin-left: 1%;
+          margin-right: 1%;
+          margin-top: -5%; } }
+      @media screen and (min-width: 992px) {
+        /* line 690, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item {
+          margin-top: -8%; } }
+      @media screen and (min-width: 1200px) {
+        /* line 690, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item {
+          flex-grow: 0; } }
+      /* line 711, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item_logo {
+        fill: #fff;
+        display: inline-flex;
+        align-items: center; }
+        /* line 715, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item_logo h1 {
+          color: #fff;
+          font-family: Raleway_Regular;
+          font-size: 34px;
+          font-weight: 400; }
+      /* line 722, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item p {
+        font-family: Montserrat_Light;
+        color: #545454;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px; }
+      /* line 729, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item h2 {
+        text-transform: capitalize;
+        font-family: Raleway_SemiBold;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700; }
+      /* line 736, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item h3 {
+        font-family: Montserrat_Light;
+        color: #545454;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-transform: capitalize; }
+      /* line 745, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item_post time {
+        font-family: Montserrat_Light;
+        color: #545454;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px; }
+      /* line 753, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item a {
+        text-decoration: none; }
+        /* line 755, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item a:hover time {
+          color: #c7b29a;
+          transition: 0.5s; }
+        /* line 759, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+        .main-footer-contacts__item a:hover h3 {
+          color: #c7b29a;
+          transition: 0.5s; }
+      /* line 764, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+      .main-footer-contacts__item_line {
+        width: 100%;
+        background-color: #545454;
+        height: 1px;
+        margin-bottom: 10px; }
+  /* line 772, /Users/damir/Documents/Coding/HTML5/Lesson8/css/styles.scss */
+  .main-footer-copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #111111;
+    font-family: Montserrat_Light;
+    color: #545454;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

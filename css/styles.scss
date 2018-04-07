@@ -1,0 +1,783 @@
+        @import "fonts.scss";
+        @import "colors.scss";
+        @mixin border ($color: white) {
+            border: 1px solid $color;
+        }
+        
+        .main-header {
+            background-image: url(../img/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            &__logo {
+                fill: $main-color;
+                display: inline-flex;
+                align-items: center;
+            }
+            & h1 {
+                color: $main-color;
+                font-family: Raleway_Regular;
+                font-size: 34px;
+                font-weight: 400;
+            }
+            &__nav {
+                font-family: Montserrat_Light;
+                font-size: 14px;
+                font-weight: 300;
+                text-transform: capitalize;
+                display: inline-flex;
+                text-align: center;
+                align-items: center;
+                & ul {
+                    padding: 0;
+                }
+                & li {
+                    display: inline-flex;
+                    list-style-type: none;
+                    margin: 0.5em;
+                }
+                & a {
+                    color: $main-color;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover {
+                        color: $select-color;
+                    }
+                }
+            }
+            &__slider {
+                width: 100%;
+                text-align: center;
+                color: $main-color;
+                margin-top: 3em;
+                margin-bottom: 5em;
+                & span {
+                    font-family: Raleway_Medium;
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+                & h2 {
+                    font-family: Raleway_ExtraBold;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 1em;
+                }
+                & p {
+                    font-family: Montserrat_Light;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    margin: 0;
+                    padding: 0;
+                    margin: 1em;
+                }
+                & button {
+                    font-family: Raleway_ExtraBold;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    text-transform: uppercase;
+                    padding: 10px 25px 10px 25px;
+                    border-radius: 5px;
+                    background-color: $select-color;
+                    color: $main-color;
+                    border: 0;
+                    cursor: pointer;
+                    margin-top: 1em;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: $main-color;
+                        color: $select-color;
+                    }
+                }
+            }
+        }
+        
+        .main-content {
+            background-color: $main-color;
+            width: 100%;
+            margin-top: 1em;
+            &-fields {
+                background-color: $main-color;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                @media screen and (min-width: 992px) {
+                    justify-content: center;
+                }
+                &__item {
+                    @media screen and (min-width: 576px) {
+                        width: 16em;
+                        margin: 1em 0.5em 1em 0.5em;
+                        flex-grow: 1;
+                    }
+                    @media screen and (min-width: 768px) {
+                        width: 10em;
+                        margin: 1em 0.5em 1em 0.5em;
+                    }
+                    @media screen and (min-width: 992px) {
+                        width: 14em;
+                        margin: 1em 0.5em 1em 0.5em;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        width: 16em;
+                        margin: 1em;
+                    }
+                    text-align: center;
+                    margin: 1em;
+                    & span {
+                        font-family: Raleway_SemiBold;
+                        color: $main-color-header;
+                        font-size: 22px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        display: block;
+                    }
+                    & p {
+                        font-family: Montserrat_Light;
+                        color: $main-color-p;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
+                }
+                &__icon {
+                    fill: $main-color-header;
+                }
+                &__line {
+                    margin: 0 auto;
+                    height: 0.1em;
+                    width: 2.5em;
+                    background-color: $main-color-p;
+                    opacity: 0.3;
+                }
+                & a {
+                    color: $main-color-header;
+                    text-decoration: none;
+                    &:hover .main-content-fields__icon {
+                        fill: $select-color;
+                        transition: 0.5s;
+                    }
+                    &:hover .main-content-fields__line {
+                        background-color: $select-color;
+                        transition: 0.5s;
+                    }
+                    &:hover .main-content-fields__item span {
+                        color: $select-color;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            &-screens {
+                padding: 83px 5% 0 5%;
+                margin-bottom: -4px;
+                text-align: center;
+                background-color: $background-color;
+                & h1 {
+                    font-family: Raleway_SemiBold;
+                    color: $main-color-header;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                & p {
+                    font-family: Montserrat_Light;
+                    color: $main-color-p;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 28px;
+                    @media screen and (min-width: 1200px) {
+                        width: 800px;
+                        margin: 0 auto;
+                    }
+                }
+                & img {
+                    width: 100%;
+                    @media screen and (min-width: 1200px) {
+                        width: 1000px;
+                    }
+                }
+            }
+            &-banner {
+                align-items: center;
+                padding: 48px 0 48px 0;
+                display: flex;
+                justify-content: center;
+                @media screen and (min-width: 768px) {
+                    justify-content: space-around;
+                }
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                }
+                flex-wrap: wrap;
+                text-align: center;
+                background: -webkit-linear-gradient(-0deg, #211b19 0%, #4e3427 100%);
+                background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+                &__item {
+                    @media screen and (min-width: 1200px) {
+                        margin-left: 100px;
+                        margin-right: 100px;
+                        @media screen and (min-width: 576px) {
+                            text-align: left;
+                        }
+                    }
+                    & span {
+                        margin: 0 0 0 10px;
+                        font-family: Raleway_Regular;
+                        font-size: 28px;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                    }
+                    & p {
+                        margin: 8px;
+                        font-family: Montserrat_Light;
+                        color: $main-banner-p;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                    & button {
+                        margin: 0 auto;
+                        text-transform: uppercase;
+                        background-color: $background-button-color;
+                        font-family: Raleway_ExtraBold;
+                        color: $main-color;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 23px;
+                        text-align: center;
+                        border: 0;
+                        border-radius: 5px;
+                        padding: 10px 20px 10px 20px;
+                        transition: 0.5s;
+                        &:hover {
+                            background-color: $main-color;
+                            color: $background-button-color;
+                        }
+                    }
+                }
+            }
+            &-projects {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: center;
+                margin: 80px 5% 80px 5%;
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                    width: 1200px;
+                    margin: 0 auto;
+                    margin-bottom: 80px;
+                }
+                & h1 {
+                    text-transform: capitalize;
+                    font-family: Raleway_SemiBold;
+                    color: $main-color-header;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                & p {
+                    font-family: Montserrat_Light;
+                    color: $main-color-p;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    width: 100%;
+                }
+                & a {
+                    text-decoration: none;
+                    &:hover .main-content-projects__item {
+                        background-color: $select-post-color;
+                        transition: 0.5s;
+                        &:hover h1 {
+                            color: $main-color;
+                            transition: 0.5s;
+                        }
+                        &:hover p {
+                            color: $select-color;
+                            transition: 0.5s;
+                        }
+                        &:hover img {
+                            filter: brightness(50%);
+                            transition: 0.5s;
+                        }
+                    }
+                    & .main-content-projects__item {
+                        margin: 30px 15px 0px 15px;
+                        width: 100%;
+                        background-color: $background-color;
+                        @media screen and (min-width: 576px) {
+                            width: 220px;
+                        }
+                        @media screen and (min-width: 768px) {
+                            width: 300px;
+                        }
+                        @media screen and (min-width: 992px) {
+                            width: 260px;
+                        }
+                        @media screen and (min-width: 1200px) {
+                            width: 310px;
+                        }
+                        & img {
+                            width: 100%;
+                        }
+                        &_text {
+                            margin-left: 28px;
+                            padding-bottom: 20px;
+                            position: relative;
+                            text-transform: capitalize;
+                            & h1 {
+                                font-family: Raleway_Medium;
+                                color: $select-color;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: left;
+                            }
+                            & p {
+                                margin-top: -14px;
+                                font-family: Montserrat_Light;
+                                color: $color-projects-p;
+                                font-size: 14px;
+                                font-weight: 300;
+                                line-height: 20px;
+                                text-align: left;
+                            }
+                            &:before {
+                                content: "";
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 0 15px 15px 15px;
+                                border-color: transparent transparent $background-color transparent;
+                                position: absolute;
+                                top: -35px;
+                                left: 0px;
+                                right: 0;
+                            }
+                        }
+                        &:hover .main-content-projects__item_text:before {
+                            border-bottom: 20px solid $select-post-color;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+            &-video {
+                background-image: url(../img/photo.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                padding: 10em 0 10em 0;
+                &__icon {
+                    & circle {
+                        fill: #000;
+                        opacity: 0.2;
+                    }
+                    & path {
+                        fill: $main-color;
+                    }
+                }
+                & h1 {
+                    font-family: Raleway_Medium;
+                    color: $main-color;
+                    font-size: 26px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin: 1em;
+                }
+                & p {
+                    font-family: Montserrat_Light;
+                    color: $main-color;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    margin: 1em;
+                }
+                & span {
+                    font-family: Montserrat_Regular;
+                    color: $select-color;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            &-promo {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: $background-color;
+                text-align: center;
+                @media screen and (min-width: 768px) {
+                    flex-wrap: no-wrap;
+                    justify-content: flex-start;
+                }
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                }
+                &__img {
+                    margin: 10% 10% 0 10%;
+                    width: 80%;
+                    height: 80%;
+                    @media screen and (min-width: 576px) {
+                        width: 423px;
+                        height: 616px;
+                        margin: 10% 10% 0 10%;
+                    }
+                    @media screen and (min-width: 768px) {
+                        width: 40%;
+                        height: 40%;
+                        text-align: left;
+                        margin: 5% 5% 0 5%;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        width: 500px;
+                        margin: 50px 0 0 0;
+                    }
+                }
+                &__text {
+                    text-align: left;
+                    @media screen and (min-width: 768px) {
+                        width: 40%;
+                        margin: 3% 3% 0 3%;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        width: 500px;
+                        margin: 80px 0 0 0;
+                    }
+                    margin: 5%;
+                    & h1 {
+                        font-family: Raleway_SemiBold;
+                        color: $main-color-header;
+                        font-size: 30px;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+                    & p {
+                        font-family: Montserrat_Light;
+                        color: $main-color-p;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
+                    & ul {
+                        list-style-type: none;
+                        & li {
+                            font-family: Montserrat_Light;
+                            color: $main-color-p;
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 24px;
+                            background: url(../img/marker.png) 0px 1px no-repeat;
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+            &-records {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background: -webkit-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+                background: -moz-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+                background: -o-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+                background: -ms-linear-gradient(-90deg, #211b19 0%, #4e3427 100%);
+                background: linear-gradient(-180deg, #211b19 0%, #4e3427 100%);
+                @media screen and (min-width: 768px) {
+                    background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+                    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+                }
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                }
+                weight: 100%;
+                padding: 70px 0 70px 0;
+                &__item {
+                    width: 100%;
+                    @media screen and (min-width: 576px) {
+                        width: 50%;
+                    }
+                    @media screen and (min-width: 768px) {
+                        width: 25%;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        width: 290px;
+                    }
+                    text-align: center;
+                    margin: 30px 0 30px 0;
+                    & svg {
+                        fill: $select-color;
+                    }
+                    & h1 {
+                        font-family: Montserrat_ExtraLight;
+                        color: $main-color;
+                        font-size: 48px;
+                        font-weight: 200;
+                        line-height: 36px;
+                        margin: 20px;
+                    }
+                    & span {
+                        font-family: Montserrat_Light;
+                        color: $select-color;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                    }
+                    &_line {
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        width: 40px;
+                        height: 2px;
+                        background-color: $main-color;
+                    }
+                }
+            }
+            &-posts {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 1em;
+                background-color: $main-color;
+                text-align: center;
+                justify-content: space-around;
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                }
+                & h1 {
+                    font-family: Raleway_Medium;
+                    color: $main-color-header;
+                    font-size: 30px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    width: 100%;
+                }
+                & p {
+                    font-family: Montserrat_Light;
+                    color: $main-color-p;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    width: 100%;
+                }
+                &__item {
+                    margin: 0 1em 1em 1em;
+                    padding-bottom: 1em;
+                    width: 370px;
+                    background-color: $background-color;
+                    @media screen and (min-width: 576px) {
+                        width: 600px;
+                    }
+                    @media screen and (min-width: 768px) {
+                        width: 210px;
+                    }
+                    @media screen and (min-width: 992px) {
+                        width: 290px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        width: 360px;
+                    }
+                    & h2 {
+                        text-align: left;
+                        text-transform: capitalize;
+                        font-family: Raleway_Medium;
+                        color: $main-color-header;
+                        font-size: 20px;
+                        font-weight: 500;
+                        padding: 0;
+                        margin-left: 5%;
+                    }
+                    & p {
+                        font-family: Montserrat_Light;
+                        color: $main-color-p;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        text-align: left;
+                        margin: 0 auto;
+                        width: 90%;
+                    }
+                    & span {
+                        font-family: Montserrat_Light;
+                        color: $select-color;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        text-align: left;
+                        display: block;
+                        text-transform: capitalize;
+                        padding: 0;
+                        margin-left: 5%;
+                        margin-top: 5%;
+                    }
+                }
+                & picture {
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & a {
+                    text-decoration: none;
+                    &:hover .main-content-posts__item {
+                        background-color: $select-post-color;
+                        transition: 0.5s;
+                    }
+                    &:hover h2 {
+                        color: $select-color;
+                        transition: 0.5s;
+                    }
+                    &:hover p {
+                        color: $main-color;
+                        transition: 0.5s;
+                    }
+                    &:hover picture {
+                        filter: brightness(50%);
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        
+        .main-footer {
+            background-color: $background-footer-color;
+            width: 100%;
+            &-logos {
+                background-image: url(../img/footer_bg.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                }
+                &__item {
+                    text-align: center;
+                    align-self: center;
+                    margin-top: 15%;
+                    margin-bottom: 15%;
+                    @media screen and (min-width: 1200px) {
+                        margin-left: 45px;
+                        margin-right: 45px;
+                        margin-top: 140px;
+                        margin-bottom: 140px;
+                    }
+                    & img {
+                        width: 80%;
+                        @media screen and (min-width: 992px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &-contacts {
+                margin-top: 10%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                @media screen and (min-width: 576px) {
+                    justify-content: space-around;
+                }
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                }
+                &__item {
+                    @media screen and (min-width: 576px) {
+                        width: 40%;
+                    }
+                    @media screen and (min-width: 992px) {
+                        width: 15%;
+                        margin-left: 1%;
+                        margin-right: 1%;
+                        margin-top: -5%;
+                    }
+                    @media screen and (min-width: 992px) {
+                        margin-top: -8%;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        flex-grow: 0;
+                    }
+                    flex-grow: 1;
+                    width: 100%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    text-align: left;
+                    &_logo {
+                        fill: $main-color;
+                        display: inline-flex;
+                        align-items: center;
+                        & h1 {
+                            color: $main-color;
+                            font-family: Raleway_Regular;
+                            font-size: 34px;
+                            font-weight: 400;
+                        }
+                    }
+                    & p {
+                        font-family: Montserrat_Light;
+                        color: $footer-color-p;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
+                    & h2 {
+                        text-transform: capitalize;
+                        font-family: Raleway_SemiBold;
+                        color: $main-color;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                    & h3 {
+                        font-family: Montserrat_Light;
+                        color: $footer-color-p;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                    }
+                    &_post {
+                        & time {
+                            font-family: Montserrat_Light;
+                            color: $footer-color-p;
+                            font-size: 12px;
+                            font-weight: 300;
+                            line-height: 20px;
+                        }
+                    }
+                    & a {
+                        text-decoration: none;
+                        &:hover time {
+                            color: $select-color;
+                            transition: 0.5s;
+                        }
+                        &:hover h3 {
+                            color: $select-color;
+                            transition: 0.5s;
+                        }
+                    }
+                    &_line {
+                        width: 100%;
+                        background-color: $footer-color-p;
+                        height: 1px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &-copyright {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                background-color: $background-copyright-color;
+                font-family: Montserrat_Light;
+                color: $footer-color-p;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 20px
+            }
+        }
